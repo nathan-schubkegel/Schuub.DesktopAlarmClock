@@ -2,9 +2,9 @@
 // You have complete freedom to do anything you want with the software, for any purpose.
 // Please refer to <http://unlicense.org/>
 
-namespace Schuub.HotelTransylvaniaAlarm
+namespace Schuub.DesktopAlarmClock
 {
-  partial class GifAndWavAlarmingForm
+  partial class MediaPlayerAlarmingForm
   {
     /// <summary>
     /// Required designer variable.
@@ -17,11 +17,6 @@ namespace Schuub.HotelTransylvaniaAlarm
     /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
     protected override void Dispose(bool disposing)
     {
-      if (disposing)
-      {
-        soundPlayer1?.Stop();
-        soundPlayer1?.Dispose();
-      }
       if (disposing && (components != null))
       {
         components.Dispose();
@@ -37,33 +32,36 @@ namespace Schuub.HotelTransylvaniaAlarm
     /// </summary>
     private void InitializeComponent()
     {
-      pictureBox1 = new System.Windows.Forms.PictureBox();
-      ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+      System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MediaPlayerAlarmingForm));
+      axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
+      ((System.ComponentModel.ISupportInitialize)axWindowsMediaPlayer1).BeginInit();
       SuspendLayout();
       // 
-      // pictureBox1
+      // axWindowsMediaPlayer1
       // 
-      pictureBox1.Location = new System.Drawing.Point(39, 34);
-      pictureBox1.Name = "pictureBox1";
-      pictureBox1.Size = new System.Drawing.Size(698, 379);
-      pictureBox1.TabIndex = 0;
-      pictureBox1.TabStop = false;
+      axWindowsMediaPlayer1.Dock = System.Windows.Forms.DockStyle.Fill;
+      axWindowsMediaPlayer1.Enabled = true;
+      axWindowsMediaPlayer1.Location = new System.Drawing.Point(0, 0);
+      axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+      axWindowsMediaPlayer1.OcxState = (System.Windows.Forms.AxHost.State)resources.GetObject("axWindowsMediaPlayer1.OcxState");
+      axWindowsMediaPlayer1.Size = new System.Drawing.Size(800, 450);
+      axWindowsMediaPlayer1.TabIndex = 0;
       // 
-      // AlarmingForm
+      // MediaPlayerAlarmingForm
       // 
       AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
       AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       ClientSize = new System.Drawing.Size(800, 450);
-      Controls.Add(pictureBox1);
-      Name = "AlarmingForm";
-      Text = "AlarmingForm";
-      Load += AlarmingForm_Load;
-      ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+      Controls.Add(axWindowsMediaPlayer1);
+      Name = "MediaPlayerAlarmingForm";
+      Text = "MediaPlayerAlarmingForm";
+      Load += MediaPlayerAlarmingForm_Load;
+      ((System.ComponentModel.ISupportInitialize)axWindowsMediaPlayer1).EndInit();
       ResumeLayout(false);
     }
 
     #endregion
 
-    private System.Windows.Forms.PictureBox pictureBox1;
+    private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
   }
 }

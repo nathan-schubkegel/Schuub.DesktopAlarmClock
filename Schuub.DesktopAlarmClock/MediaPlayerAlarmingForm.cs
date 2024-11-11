@@ -12,7 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Schuub.HotelTransylvaniaAlarm
+namespace Schuub.DesktopAlarmClock
 {
   public partial class MediaPlayerAlarmingForm : Form
   {

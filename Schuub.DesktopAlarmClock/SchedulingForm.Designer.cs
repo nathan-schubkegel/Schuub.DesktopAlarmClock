@@ -2,7 +2,7 @@
 // You have complete freedom to do anything you want with the software, for any purpose.
 // Please refer to <http://unlicense.org/>
 
-namespace Schuub.HotelTransylvaniaAlarm
+namespace Schuub.DesktopAlarmClock
 {
   partial class SchedulingForm
   {

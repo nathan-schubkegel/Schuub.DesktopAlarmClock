@@ -5,7 +5,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace Schuub.HotelTransylvaniaAlarm
+namespace Schuub.DesktopAlarmClock
 {
   public partial class SchedulingForm : Form
   {

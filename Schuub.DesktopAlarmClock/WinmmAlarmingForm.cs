@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Schuub.HotelTransylvaniaAlarm
+namespace Schuub.DesktopAlarmClock
 {
   public partial class WinmmAlarmingForm : Form
   {
